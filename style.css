@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #b76e79;      /* Rose Gold/Dusty Rose */
-    --primary-dark: #8c525a;
-    --secondary-color: #e8d3cc;    /* Soft Blush */
-    --accent-color: #f7ede8;       /* Very Light Blush */
-    --text-dark: #3a2e30;
-    --text-muted: #6e5e60;
-    --bg-light: #fcf9f8;
+    --primary-color: #522B39;      /* Brand Deep Plum */
+    --primary-dark: #361a24;       /* Darker Plum */
+    --secondary-color: #F9B707;    /* Brand Gold */
+    --accent-color: #d9e5e5;       /* Soft Cyan/Blue-Grey */
+    --text-dark: #3B3D42;
+    --text-muted: #A1A2A4;
+    --bg-light: #f9f9fa;
     --white: #ffffff;
     
     --font-heading: 'Playfair Display', serif;
@@ -87,6 +87,10 @@ p {
 
 .bg-light {
     background-color: var(--bg-light);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
 }
 
 .split-layout {
@@ -766,6 +770,26 @@ p {
     font-size: 1.25rem;
     color: var(--primary-dark);
     line-height: 1.8;
+}
+
+/* Dark Theme Inversions */
+.bg-primary-dark {
+    background-color: var(--primary-dark);
+}
+.bg-primary-dark .contact-text h2,
+.bg-primary-dark .contact-text .lead,
+.bg-primary-dark .contact-text p,
+.bg-primary-dark .section-title,
+.bg-primary-dark .list-text {
+    color: var(--white);
+}
+.bg-primary-dark .contact-text .btn-outline {
+    border-color: var(--white);
+    color: var(--white);
+}
+.bg-primary-dark .contact-text .btn-outline:hover {
+    background-color: var(--white);
+    color: var(--primary-dark);
 }
 
 .contact-form-container {
